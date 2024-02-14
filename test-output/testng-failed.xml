@@ -6,7 +6,7 @@
       <class name="com.userapi.tests.Test01">
         <methods>
           <include name="beforeMethod"/>
-          <include name="getRequest"/>
+          <include name="deleteuser"/>
         </methods>
       </class> <!-- com.userapi.tests.Test01 -->
     </classes>

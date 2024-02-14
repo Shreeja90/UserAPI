@@ -9,12 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">5,914</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,773</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.userapi.tests.Test01</td><td><a href="#m0">getRequest</a></td><td rowspan="1">1707927777339</td><td rowspan="1">5661</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.userapi.tests.Test01</td><td><a href="#m0">deleteuser</a></td><td rowspan="1">1707939051429</td><td rowspan="1">2747</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.userapi.tests.Test01</td><td><a href="#m1">getRequest</a></td><td rowspan="1">1707939054223</td><td rowspan="1">1385</td></tr><tr class="passedeven"><td><a href="#m2">postCreateUser</a></td><td rowspan="1">1707939055618</td><td rowspan="1">404</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.userapi.tests.Test01#getRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;400&gt;.
+<h2>Test</h2><h3 id="m0">com.userapi.tests.Test01#deleteuser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
 
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
@@ -40,9 +40,11 @@ Expected status code &lt;201&gt; but was &lt;400&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.userapi.basic.api.RestResource.post(RestResource.java:23)
-	at com.userapi.tests.Test01.getRequest(Test01.java:26)
+	at com.userapi.basic.api.RestResource.delete(RestResource.java:55)
+	at com.userapi.tests.Test01.deleteuser(Test01.java:42)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.userapi.tests.Test01#getRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.userapi.tests.Test01#postCreateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
