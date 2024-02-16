@@ -1,0 +1,150 @@
+[
+  {
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "",
+    "user_last_name": "Menon",
+    "user_contact_number": 3333444488,
+    "user_email_id": "srm@example.com"
+},
+
+	{
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "",
+    "user_contact_number": 3333444488,
+    "user_email_id": "srm@example.com"
+},
+
+	{
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "Menon",
+    "user_contact_number": "gyoewgfij3hfi",
+    "user_email_id": "srm@example.com"
+},
+    
+{
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": "$#%^%^&"
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "Menon",
+    "user_contact_number": 3333444488,
+    "user_email_id": "srm@example.com"
+},
+    
+	   {
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "",
+        "state": "state",
+        "country": "country",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "Menon",
+    "user_contact_number": 3333444488,
+    "user_email_id": "srm@example.com"
+},
+	
+    
+	   {
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "",
+        "country": "country",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "Menon",
+    "user_contact_number": 3333444488,
+    "user_email_id": "srm@example.com"
+},
+	
+   {
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "state",
+        "country": "",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "Menon",
+    "user_contact_number": 3333444488,
+    "user_email_id": "srm@example.com"
+},
+
+    
+   {
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "Menon",
+    "user_contact_number": 3333444488,
+    "user_email_id": ""
+},
+
+    
+   {
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "Menon",
+    "user_contact_number": "",
+    "user_email_id": "srm@example.com"
+}
+
+
+]

@@ -1,0 +1,53 @@
+[
+   {
+    "userAddress": {
+        "addressId": 377,
+        "plotNumber": "plotNumber-001",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 23769
+    },
+    "user_id": 677,
+    "user_first_name": "Shrija",
+    "user_last_name": "Menon",
+    "user_contact_number": 3333444488,
+    "user_email_id": "srm@example.com"
+},
+
+
+
+{
+        "userAddress": {
+        "addressId": 110,
+        "plotNumber": "Plot-177",
+        "street": "Bergen Ave",
+        "state": "NJ",
+        "country": "US",
+        "zipCode": 12345
+        },
+      "user_id": 11,
+      "user_first_name": "Abhi",
+      "user_last_name": "Testers",
+      "user_contact_number": 1122334457,
+      "user_email_id": "successapi456@example.com"
+     
+    },
+
+  {
+      "userAddress": {
+      "addressId": 12,
+      "plotNumber": "Plot-189",
+      "street": "Bergen Ave",
+      "state": "NJ",
+      "country": "US",
+      "zipCode": 12345
+      },
+  "user_id": 12,
+  "user_first_name": "Anaishu",
+  "user_last_name": "Testers",
+  "user_contact_number": 3344556679,
+  "user_email_id": "successapi789@example.com"
+  }
+
+]

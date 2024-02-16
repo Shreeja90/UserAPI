@@ -73,5 +73,8 @@ public class RestResource {
         return new ResponseSpecBuilder().
                 log(LogDetail.ALL).
                 build();
+        
     }
+    
+
 }

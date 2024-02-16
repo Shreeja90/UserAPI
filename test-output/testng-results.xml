@@ -1,142 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-14T14:30:51 EST" name="Suite" finished-at="2024-02-14T14:30:56 EST" duration-ms="4773">
+  <suite started-at="2024-02-16T13:41:03 EST" name="USER API TEST CASES" finished-at="2024-02-16T13:41:16 EST" duration-ms="13132">
     <groups>
       <group name="smoke">
-        <method signature="Test01.getRequest()[pri:0, instance:com.userapi.tests.Test01@428640fa]" name="getRequest" class="com.userapi.tests.Test01"/>
-        <method signature="Test01.postCreateUser()[pri:0, instance:com.userapi.tests.Test01@428640fa]" name="postCreateUser" class="com.userapi.tests.Test01"/>
+        <method signature="Test01.getRequest()[pri:1, instance:com.userapi.tests.Test01@576d5deb]" name="getRequest" class="com.userapi.tests.Test01"/>
+        <method signature="Test01.postCreateUser()[pri:2, instance:com.userapi.tests.Test01@576d5deb]" name="postCreateUser" class="com.userapi.tests.Test01"/>
+        <method signature="Test01.testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" name="testWithJsonData" class="com.userapi.tests.Test01"/>
+        <method signature="Test01.positivetestWithJsonData(java.lang.Object)[pri:4, instance:com.userapi.tests.Test01@576d5deb]" name="positivetestWithJsonData" class="com.userapi.tests.Test01"/>
+        <method signature="Test01.putTestWithJsonData(java.lang.Object)[pri:5, instance:com.userapi.tests.Test01@576d5deb]" name="putTestWithJsonData" class="com.userapi.tests.Test01"/>
+        <method signature="Test01.deleteuser()[pri:6, instance:com.userapi.tests.Test01@576d5deb]" name="deleteuser" class="com.userapi.tests.Test01"/>
       </group> <!-- smoke -->
       <group name="create">
-        <method signature="Test01.postCreateUser()[pri:0, instance:com.userapi.tests.Test01@428640fa]" name="postCreateUser" class="com.userapi.tests.Test01"/>
+        <method signature="Test01.postCreateUser()[pri:2, instance:com.userapi.tests.Test01@576d5deb]" name="postCreateUser" class="com.userapi.tests.Test01"/>
       </group> <!-- create -->
-      <group name="delete">
-        <method signature="Test01.deleteuser()[pri:0, instance:com.userapi.tests.Test01@428640fa]" name="deleteuser" class="com.userapi.tests.Test01"/>
-      </group> <!-- delete -->
       <group name="users">
-        <method signature="Test01.getRequest()[pri:0, instance:com.userapi.tests.Test01@428640fa]" name="getRequest" class="com.userapi.tests.Test01"/>
+        <method signature="Test01.getRequest()[pri:1, instance:com.userapi.tests.Test01@576d5deb]" name="getRequest" class="com.userapi.tests.Test01"/>
       </group> <!-- users -->
     </groups>
-    <test started-at="2024-02-14T14:30:51 EST" name="Test" finished-at="2024-02-14T14:30:56 EST" duration-ms="4773">
+    <test started-at="2024-02-16T13:41:03 EST" name="Test" finished-at="2024-02-16T13:41:16 EST" duration-ms="13132">
       <class name="com.userapi.tests.Test01">
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.userapi.tests.Test01@428640fa]" started-at="2024-02-14T14:30:51 EST" name="beforeMethod" finished-at="2024-02-14T14:30:51 EST" duration-ms="21" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.userapi.tests.Test01.deleteuser()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="deleteuser()[pri:0, instance:com.userapi.tests.Test01@428640fa]" started-at="2024-02-14T14:30:51 EST" name="deleteuser" finished-at="2024-02-14T14:30:54 EST" duration-ms="2747" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Expected status code <200> but was <404>.
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
-
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at com.userapi.basic.api.RestResource.delete(RestResource.java:55)
-at com.userapi.tests.Test01.deleteuser(Test01.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteuser -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.userapi.tests.Test01@428640fa]" started-at="2024-02-14T14:30:54 EST" name="beforeMethod" finished-at="2024-02-14T14:30:54 EST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.userapi.tests.Test01.getRequest() throws java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="getRequest()[pri:0, instance:com.userapi.tests.Test01@428640fa]" started-at="2024-02-14T14:30:54 EST" name="getRequest" finished-at="2024-02-14T14:30:55 EST" duration-ms="1385" status="PASS">
+        <test-method signature="getRequest()[pri:1, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:03 EST" name="getRequest" finished-at="2024-02-16T13:41:09 EST" duration-ms="5496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRequest -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.userapi.tests.Test01@428640fa]" started-at="2024-02-14T14:30:55 EST" name="beforeMethod" finished-at="2024-02-14T14:30:55 EST" duration-ms="1" status="PASS">
+        <test-method signature="postCreateUser()[pri:2, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:09 EST" name="postCreateUser" finished-at="2024-02-16T13:41:09 EST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCreateUser -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:09 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:10 EST" duration-ms="305" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.userapi.tests.Test01.postCreateUser() throws java.io.IOException]]>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":23769,"street":"street","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"","user_email_id":"srm@example.com","user_id":677,"user_last_name":"Menon","user_contact_number":3333444488}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="postCreateUser()[pri:0, instance:com.userapi.tests.Test01@428640fa]" started-at="2024-02-14T14:30:55 EST" name="postCreateUser" finished-at="2024-02-14T14:30:56 EST" duration-ms="404" status="PASS">
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:10 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:10 EST" duration-ms="489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":23769,"street":"street","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"Shrija","user_email_id":"srm@example.com","user_id":677,"user_last_name":"","user_contact_number":3333444488}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCreateUser -->
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:10 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:11 EST" duration-ms="309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":23769,"street":"street","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"Shrija","user_email_id":"srm@example.com","user_id":677,"user_last_name":"Menon","user_contact_number":"gyoewgfij3hfi"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:11 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:11 EST" duration-ms="293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":"$#%^%^&","street":"street","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"Shrija","user_email_id":"srm@example.com","user_id":677,"user_last_name":"Menon","user_contact_number":3333444488}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:11 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:11 EST" duration-ms="343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":23769,"street":"","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"Shrija","user_email_id":"srm@example.com","user_id":677,"user_last_name":"Menon","user_contact_number":3333444488}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:11 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:12 EST" duration-ms="336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":23769,"street":"street","plotNumber":"plotNumber-001","state":"","addressId":377},"user_first_name":"Shrija","user_email_id":"srm@example.com","user_id":677,"user_last_name":"Menon","user_contact_number":3333444488}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:12 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:12 EST" duration-ms="283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"","zipCode":23769,"street":"street","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"Shrija","user_email_id":"srm@example.com","user_id":677,"user_last_name":"Menon","user_contact_number":3333444488}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:12 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:12 EST" duration-ms="321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":23769,"street":"street","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"Shrija","user_email_id":"","user_id":677,"user_last_name":"Menon","user_contact_number":3333444488}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="testWithJsonData(java.lang.Object)[pri:3, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:12 EST" name="testWithJsonData" data-provider="jsonDataProvider" finished-at="2024-02-16T13:41:12 EST" duration-ms="325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":23769,"street":"street","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"Shrija","user_email_id":"srm@example.com","user_id":677,"user_last_name":"Menon","user_contact_number":""}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithJsonData -->
+        <test-method signature="positivetestWithJsonData(java.lang.Object)[pri:4, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:12 EST" name="positivetestWithJsonData" data-provider="jsonDataProvider1" finished-at="2024-02-16T13:41:13 EST" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"country","zipCode":23769,"street":"street","plotNumber":"plotNumber-001","state":"state","addressId":377},"user_first_name":"Shrija","user_email_id":"srm@example.com","user_id":677,"user_last_name":"Menon","user_contact_number":3333444488}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positivetestWithJsonData -->
+        <test-method signature="positivetestWithJsonData(java.lang.Object)[pri:4, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:13 EST" name="positivetestWithJsonData" data-provider="jsonDataProvider1" finished-at="2024-02-16T13:41:13 EST" duration-ms="360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"US","zipCode":12345,"street":"Bergen Ave","plotNumber":"Plot-177","state":"NJ","addressId":110},"user_first_name":"Abhi","user_email_id":"successapi456@example.com","user_id":11,"user_last_name":"Testers","user_contact_number":1122334457}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positivetestWithJsonData -->
+        <test-method signature="positivetestWithJsonData(java.lang.Object)[pri:4, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:13 EST" name="positivetestWithJsonData" data-provider="jsonDataProvider1" finished-at="2024-02-16T13:41:14 EST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"US","zipCode":12345,"street":"Bergen Ave","plotNumber":"Plot-189","state":"NJ","addressId":12},"user_first_name":"Anaishu","user_email_id":"successapi789@example.com","user_id":12,"user_last_name":"Testers","user_contact_number":3344556679}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positivetestWithJsonData -->
+        <test-method signature="putTestWithJsonData(java.lang.Object)[pri:5, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:14 EST" name="putTestWithJsonData" data-provider="jsonDataProvider2" finished-at="2024-02-16T13:41:14 EST" duration-ms="320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"US","zipCode":12345,"street":"Bergen Ave","plotNumber":"Plot-134","state":"NJ","addressId":10},"user_first_name":"Shreeja","user_email_id":"successapi123@example.com","user_id":10,"user_last_name":"Testers","user_contact_number":1235468790}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTestWithJsonData -->
+        <test-method signature="putTestWithJsonData(java.lang.Object)[pri:5, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:14 EST" name="putTestWithJsonData" data-provider="jsonDataProvider2" finished-at="2024-02-16T13:41:14 EST" duration-ms="315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"US","zipCode":12345,"street":"Bergen Ave","plotNumber":"Plot-134","state":"NJ","addressId":10},"user_first_name":67346,"user_email_id":"successapi123@example.com","user_id":10,"user_last_name":"Testers","user_contact_number":2223334449}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTestWithJsonData -->
+        <test-method signature="putTestWithJsonData(java.lang.Object)[pri:5, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:14 EST" name="putTestWithJsonData" data-provider="jsonDataProvider2" finished-at="2024-02-16T13:41:15 EST" duration-ms="308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"US","zipCode":12345,"street":"Bergen Ave","plotNumber":"Plot-134","state":"NJ","addressId":10},"user_first_name":"Shreeja","user_email_id":"successapi123@example.com","user_id":10,"user_last_name":"646434","user_contact_number":2223334449}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTestWithJsonData -->
+        <test-method signature="putTestWithJsonData(java.lang.Object)[pri:5, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:15 EST" name="putTestWithJsonData" data-provider="jsonDataProvider2" finished-at="2024-02-16T13:41:15 EST" duration-ms="327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"US","zipCode":12345,"street":"Bergen Ave","plotNumber":"Plota3","state":"NJ","addressId":10},"user_first_name":"Shreeja","user_email_id":"successapi123@example.com","user_id":10,"user_last_name":"Testers","user_contact_number":2223334449}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTestWithJsonData -->
+        <test-method signature="putTestWithJsonData(java.lang.Object)[pri:5, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:15 EST" name="putTestWithJsonData" data-provider="jsonDataProvider2" finished-at="2024-02-16T13:41:15 EST" duration-ms="303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"userAddress":{"country":"US","zipCode":12345,"street":"Bergen Ave","plotNumber":"Plot-134","state":"NJ","addressId":10},"user_first_name":"Shreeja","user_email_id":344574657,"user_id":10,"user_last_name":"Testers","user_contact_number":2223334449}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTestWithJsonData -->
+        <test-method signature="deleteuser()[pri:6, instance:com.userapi.tests.Test01@576d5deb]" started-at="2024-02-16T13:41:15 EST" name="deleteuser" finished-at="2024-02-16T13:41:16 EST" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteuser -->
       </class> <!-- com.userapi.tests.Test01 -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- USER API TEST CASES -->
 </testng-results>

@@ -1,0 +1,86 @@
+[
+    {
+        "userAddress": {    
+        "addressId": 10,
+        "plotNumber": "Plot-134",
+        "street": "Bergen Ave",
+        "state": "NJ",
+        "country": "US",
+        "zipCode": 12345
+        },
+       "user_id": 10,
+        "user_first_name": "Shreeja",
+        "user_last_name": "Testers",
+        "user_contact_number": 1235468790,
+        "user_email_id": "successapi123@example.com"
+    },
+    
+    
+   {
+        "userAddress": {    
+        "addressId": 10,
+        "plotNumber": "Plot-134",
+        "street": "Bergen Ave",
+        "state": "NJ",
+        "country": "US",
+        "zipCode": 12345
+        },
+       "user_id": 10,
+        "user_first_name": 67346,
+        "user_last_name": "Testers",
+        "user_contact_number": 2223334449,
+        "user_email_id": "successapi123@example.com"
+    },
+ 
+    
+      {
+        "userAddress": {    
+        "addressId": 10,
+        "plotNumber": "Plot-134",
+        "street": "Bergen Ave",
+        "state": "NJ",
+        "country": "US",
+        "zipCode": 12345
+        },
+       "user_id": 10,
+        "user_first_name": "Shreeja",
+        "user_last_name": "646434",
+        "user_contact_number": 2223334449,
+        "user_email_id": "successapi123@example.com"
+    },
+    
+      {
+        "userAddress": {    
+        "addressId": 10,
+        "plotNumber": "Plota3",
+        "street": "Bergen Ave",
+        "state": "NJ",
+        "country": "US",
+        "zipCode": 12345
+        },
+       "user_id": 10,
+        "user_first_name": "Shreeja",
+        "user_last_name": "Testers",
+        "user_contact_number": 2223334449,
+        "user_email_id": "successapi123@example.com"
+    },
+    
+   
+    
+     {
+        "userAddress": {    
+        "addressId": 10,
+        "plotNumber": "Plot-134",
+        "street": "Bergen Ave",
+        "state": "NJ",
+        "country": "US",
+        "zipCode": 12345
+        },
+       "user_id": 10,
+        "user_first_name": "Shreeja",
+        "user_last_name": "Testers",
+        "user_contact_number": 2223334449,
+        "user_email_id": 344574657
+    }
+   
+    ]
